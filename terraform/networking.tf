@@ -1,6 +1,7 @@
 resource "aws_security_group" "allow_all_from_my_ip" {
   name        = "allow_all_from_my_ip"
   description = "Allow all inbound traffic from my IP"
+  vpc_id      = var.vpc_id
 
   ingress {
     description = "Allow all traffic from my personal IP"
