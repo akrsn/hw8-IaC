@@ -1,7 +1,7 @@
 resource "aws_instance" "jenkins_server" {
   ami           = "ami-0f9de6e2d2f067fca"
   instance_type = "t2.micro"
-  vpc_id      = var.subnet_id
+  subnet_id      = var.subnet_id
 
   vpc_security_group_ids = [aws_security_group.allow_all_from_my_ip.id]
   key_name               = "${var.key_pair_name}"  # taken from variables.tf
