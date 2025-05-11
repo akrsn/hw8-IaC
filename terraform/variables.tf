@@ -15,3 +15,8 @@ variable "vpc_id" {
   description = "ID of the existing VPC"
   type        = string
 }
+
+variable "subnet_id" {
+  description = "ID of the existing subnet"
+  type        = string
+}
