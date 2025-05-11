@@ -10,3 +10,8 @@ variable "key_pair_name" {
   type        = string
   sensitive   = true
 }
+
+variable "vpc_id" {
+  description = "ID of the existing VPC"
+  type        = string
+}
